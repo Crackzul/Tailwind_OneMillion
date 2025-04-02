@@ -4,7 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        newcolor_orange: '#f74c3c'
+        newcolor_orange: '#f74c3c',
+        new_gray: '#222222'
+      },
+      fontFamily: {
+        arvo: ['arvo']
+      },
+      fontFamily: {
+        helvetica: ['helvetica']
       }
     },
   },

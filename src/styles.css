@@ -6,19 +6,13 @@
     src: url(../Assets/fonts/Arvo-Regular.ttf);
 }
 
-h1 {
-    font-family: 'arvo';
-}
-
 h2 {
     position: relative;
     text-transform: capitalize;
-    font-family: 'arvo';
 }
 
 h3 {
     text-transform: capitalize;
-    font-family: 'arvo';
 }
 
 h2::after {

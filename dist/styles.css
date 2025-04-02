@@ -554,48 +554,32 @@ video {
   display: none;
 }
 
-.m-6 {
-  margin: 1.5rem;
-}
-
-.m-1 {
-  margin: 0.25rem;
-}
-
-.m-10 {
-  margin: 2.5rem;
+.m-0 {
+  margin: 0px;
 }
 
 .m-5 {
   margin: 1.25rem;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
 
-.h-1\/4 {
-  height: 25%;
+.h-\[40vh\] {
+  height: 40vh;
 }
 
-.w-1\/4 {
-  width: 25%;
+.h-\[60vh\] {
+  height: 60vh;
 }
 
 .w-1\/5 {
   width: 20%;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .flex-col {
@@ -610,12 +594,16 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-around {
   justify-content: space-around;
 }
 
-.gap-y-0\.5 {
-  row-gap: 0.125rem;
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-y-10 {
@@ -624,6 +612,11 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-600 {
@@ -636,14 +629,9 @@ video {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
 }
 
-.bg-black {
+.bg-newcolor_orange {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+  background-color: rgb(247 76 60 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'\.\.\/Assets\/images\/hero-image\.jpg\'\)\] {
@@ -654,6 +642,10 @@ video {
   background-size: cover;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -662,32 +654,8 @@ video {
   padding: 2rem;
 }
 
-.p-9 {
-  padding: 2.25rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-7 {
-  padding: 1.75rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-center {
@@ -697,6 +665,11 @@ video {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-newcolor_orange {
+  --tw-text-opacity: 1;
+  color: rgb(247 76 60 / var(--tw-text-opacity, 1));
 }
 
 .text-orange-500 {
@@ -709,10 +682,19 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+@font-face {
+  font-family: 'arvo';
+
+  src: url(../Assets/fonts/Arvo-Regular.ttf);
+}
+
+h1 {
+  font-family: 'arvo';
+}
+
 h2 {
-  position: absolute;
+  position: relative;
   text-transform: capitalize;
-  color: #f74c3c;
 }
 
 h3 {
@@ -726,5 +708,5 @@ h2::after {
   width:100%;
   height:2px;
   margin-top:20px;
-  background-color:orange;
+  background-color:#f74c3c;
 }

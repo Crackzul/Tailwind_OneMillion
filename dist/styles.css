@@ -596,10 +596,6 @@ video {
   margin: 0px;
 }
 
-.m-20 {
-  margin: 5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -689,11 +685,6 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
-}
-
 .gap-y-10 {
   row-gap: 2.5rem;
 }
@@ -759,9 +750,8 @@ video {
   padding: 2rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .pr-3 {
@@ -851,5 +841,10 @@ h2::after {
 @media (min-width: 1024px) {
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 }

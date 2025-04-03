@@ -694,6 +694,10 @@ video {
        column-gap: 2.5rem;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -753,6 +757,11 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pr-3 {
@@ -837,4 +846,10 @@ h2::after {
   margin-top:20px;
   background-color:#f74c3c;
   left: 10%;
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row;
+  }
 }

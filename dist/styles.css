@@ -959,6 +959,10 @@ h2::after {
     width: 25%;
   }
 
+  .lg\:w-60 {
+    width: 15rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -988,5 +992,14 @@ h2::after {
 
   .lg\:gap-y-8 {
     row-gap: 2rem;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

@@ -7,37 +7,45 @@
     <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body class="font-helvetica">
+    <a id="top"></a>
     <header class="bg-new_gray flex justify-around m-0 p-6">
         <h1 class="text-white font-bold">ONEMILLION<span class="text-gray-300">LINES_</span></h1>
-        <nav class="flex">
-        <ul class="flex text-gray-300">
-            <li><a href="" class="pr-3 font-[arvo] nav-link inline-block">WHO WE ARE</a></li>
-            <li><a href="" class="font-[arvo] nav-link inline-block">GET INVOLVED</a></li>
-        </ul>
+        <nav class="flex items-center relative">
+            <input type="checkbox" id="burger-menu" class="peer hidden">
+            <label for="burger-menu" class="sm:hidden cursor-pointer">
+                <img src="Assets/images/list-ul.svg" alt="Open menu" class="w-6 h-6">
+            </label>
+            <ul class="hidden peer-checked:flex flex-col absolute right-4 top-16 bg-new_gray text-white p-4 rounded-md sm:hidden z-50">
+                <li><a href="#who-we-are" class="py-1">WHO WE ARE</a></li>
+                <li><a href="#get-involved" class="py-1">GET INVOLVED</a></li>
+            </ul>
+            <ul class="hidden sm:flex text-gray-300 ml-4">
+                <li><a href="#who-we-are" class="pr-3 font-[arvo] nav-link inline-block">WHO WE ARE</a></li>
+                <li><a href="#get-involved" class="font-[arvo] nav-link inline-block">GET INVOLVED</a></li>
+              </ul>
         </nav>
     </header>
     <!-- Section haute image ville -->
     <section class="bg-[url('../Assets/images/hero-image.jpg')] h-[60vh] bg-cover flex flex-col justify-center items-center text-center"> 
-        <h1 class="text-6xl text-white font-[arvo]">Our goal is to inspire <br> Thallahasse to write 1,000,000 <br> lines of code_</h1>
-        <p class="text-gray-300 text-xl">ALL over the country people are taking the <span>HOUR OF CODE</span> challenge issued by <span>CODE.org</span>. Millions of lines of code <br> are being written. In the capital of Florida, Thallahasse, the community is taking the challenge and our goal is to write <br> 1,000,000 lines of code</p>
-        <a href="" class="btn text-white bg-red-500 border rounded-md p-2 border-gray-500 text-2xl">Learn more >></a>
-        <div>
-            <img src="Assets/images/code.png" alt="code">
-        </div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-[arvo] max-w-[90%] mx-auto px-2">Our goal is to inspire <br> Thallahasse to write 1,000,000 <br> lines of code_</h1>
+        <p class="text-sm sm:text-base md:text-lg text-gray-300 max-w-[90%] sm:max-w-xl mx-auto px-2">
+            ALL over the country people are taking the <span class="text-white">HOUR OF CODE</span> challenge issued by <span class="text-white">CODE.org</span>. Millions of lines of code are being written. In the capital of Florida, Thallahasse, the community is taking the challenge and our goal is to write 1,000,000 lines of code</p>
+        <a href="" class="btn text-white bg-red-500 border rounded-md p-2 border-gray-500 text-2xl mt-5">Learn more >></a>
+            <img class="mt-5" src="Assets/images/code.png" alt="code">
     </section>
     <!-- Section who we are -->
-    <section class="flex flex-col mt-20 ">
+    <section  id="who-we-are" class=" w-full flex flex-col mt-20 ">
         <div class="flex justify-center">
             <img class="w-[10vw]" src="Assets/images/academy-brand-med.png" alt="academy">
         </div>
         <div class="flex flex-col items-center">
-            <h2 class="inline-block text-newcolor_orange mt-10 mb-10 text-2xl font-bold font-[arvo]">WHO WE ARE</h2>
-            <p class="mt-10 mb-10 text-center text-xl">We are <span class=" text-newcolor_orange">MASSIVE Academy</span>. We aim improve education through botch method - effective project-based learning - and material <br> -by teaching skills that applicable to improve your life today.
+            <h2 class="inline-block text-newcolor_orange mt-10 mb-10 text-2xl font-bold font-[arvo">WHO WE ARE</h2>
+            <p class="text-gray-700 text-sm sm:text-base md:text-lg mt-10 mb-10 text-center pl-0 w-full">We are <span class=" text-newcolor_orange">MASSIVE Academy</span>. We aim improve education through botch method - effective project-based learning - and material <br> -by teaching skills that applicable to improve your life today.
             </p>
         </div>
     </section>
     <!-- Section Get involved -->
-    <section class="flex flex-col items-center px-4 py-10">
+    <section id="get-involved" class="flex flex-col items-center px-4 py-10">
         <h2 class="text-newcolor_orange text-2xl font-bold font-[arvo] mb-10">GET INVOLVED</h2>
     
         <div class="flex flex-col gap-y-10 lg:flex-row lg:gap-x-10">
@@ -46,7 +54,7 @@
                     <img class="w-[70%] p-2" src="Assets/images/user-astronaut.svg" alt="student">
                 </div>
                 <h3 class="text-newcolor_orange pt-10 text-xl font-semibold font-[arvo]">STUDENTS</h3>
-                <p class="p-8 text-center lg:text-xl">
+                <p class="text-gray-700 p-8 text-center text-sm sm:text-base md:text-lg">
                     Want to learn how to code? Click below and well let you know how to get involved.
                 </p>
                 <a href="" class="btn">Start Learning >></a>
@@ -57,7 +65,7 @@
                     <img class="w-[70%] p-2" src="Assets/images/pencil.svg" alt="educator">
                 </div>
                 <h3 class="text-newcolor_orange pt-10 text-xl font-semibold font-[arvo]">EDUCATORS</h3>
-                <p class="p-8 text-center lg:text-xl">
+                <p class="text-gray-700  p-8 text-center text-sm sm:text-base md:text-lg">
                     Want to bring this initiative to your school? Click below and well make it happen.
                 </p>
                 <a href="" class="btn">Join The Initiative >></a>
@@ -68,7 +76,7 @@
                     <img class="w-[70%] p-2" src="Assets/images/money-bill-1.svg" alt="sponsor">
                 </div>
                 <h3 class="text-newcolor_orange pt-10 text-xl font-semibold font-[arvo]">SPONSORS</h3>
-                <p class="p-8 text-center lg:text-xl">
+                <p class="text-gray-700  p-8 text-center text-sm sm:text-base md:text-lg">
                     We love the support to help empower lives with coding knowledge.
                 </p>
                 <a href="" class="btn">Give Support >></a>
@@ -80,7 +88,13 @@
                 <h1 class="text-white font-bold">ONEMILLION <span class="text-gray-300"> LINES_</span></h1>
                 <p class="text-gray-300">One Community_One Million Lines of Code_</p>
             </div>
+            <div class="fixed bottom-4 right-4 bg-new_gray rounded-full h-20 w-20 flex justify-center items-center lg:hidden">
+                <a href="#top" aria-label="Back to top">
+                  <img src="Assets/images/angle-up.svg" alt="Back to top" class="w-6 h-6">
+                </a>
+              </div>
         </footer>
+              
         
             
 

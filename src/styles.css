@@ -28,7 +28,7 @@ h2::after {
 
 @layer components {
     .btn {
-      @apply inline-block font-bold border border-gray-500 rounded-md p-2
+      @apply text-sm sm:text-base md:text-xl inline-block font-bold border border-gray-500 rounded-md p-2
              transition-all duration-300 
              text-newcolor_orange bg-white
              hover:shadow-[0_20px_20px_rgba(0,0,0,1)]
